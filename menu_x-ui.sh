@@ -11,7 +11,7 @@ echo " (3). Cập nhật X_UI "
 echo " (4). Dừng bảng điều khiển "
 echo " (5). Khởi động bảng điều khiển "
 echo " (6). Khởi động lại bảng điều khiển "
-echo " (0). Đóng menu "
+echo " (0). Quay lại "
 echo " ============================================== "
 echo -n " Lựa chọn của bạn là:  "
 read so
