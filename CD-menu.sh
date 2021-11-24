@@ -37,6 +37,9 @@ wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh
 chmod +x menu_x-ui.sh
 
 clear
+wget https://raw.githubusercontent.com/sprov065/x-ui/master/install.sh
+
+clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
 chmod +x menu.sh
 ./menu.sh
