@@ -24,6 +24,7 @@ then
         ufw allow 443
         ufw allow 80
         ufw allow 80/tcp
+        clear
         echo " "
         echo " ★★★ Đã Cài Đặt X_UI ★★★ "
         ./menu_x-ui.sh
