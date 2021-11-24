@@ -45,7 +45,6 @@ then
         clear
         echo " "
         echo " ★★★ Đã Cập Nhật X_UI ★★★ "
-        echo " === Bấm Y nếu nó hỏi === "
         ./menu_x-ui.sh
         
 elif [ $so -eq 4 ]
