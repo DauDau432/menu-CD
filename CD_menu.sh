@@ -50,7 +50,7 @@ then
         echo " Bắt Đầu Nhập... "
         passwd
         echo " ------------------------------- "
-        ./CD_menu.sh   
+        ./CD_menu.sh 
         
         elif [ $so -eq 5 ]
 then
