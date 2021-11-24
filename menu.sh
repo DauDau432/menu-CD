@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-sudo su
+
 rm CD_menu.sh
 rm CD_menu.sh.1
 rm CD_menu.sh.2
