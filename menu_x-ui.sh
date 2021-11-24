@@ -19,12 +19,7 @@ read so
 if [ $so -eq 1 ]
 then
         clear
-        x-ui install
-        ufw allow 54321
-        ufw allow 443
-        ufw allow 80
-        ufw allow 80/tcp
-        echo " ★★★ Đã Cài Đặt X-UI ★★★ "
+        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-x-ui/main/CD%20x-ui)
         ./menu_x-ui.sh
         
 elif [ $so -eq 2 ]
