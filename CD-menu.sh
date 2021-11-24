@@ -32,10 +32,7 @@ sudo apt-get update
 sudo apt-get install curl
 sudo apt-get install bash
 
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh
-chmod +x menu_x-ui.sh
 
-wget https://raw.githubusercontent.com/sprov065/x-ui/master/install.sh
 
 clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
