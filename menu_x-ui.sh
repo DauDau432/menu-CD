@@ -33,7 +33,7 @@ then
         ufw deny 54321
         clear
         echo " "
-        echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI ★★★ "
+        echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
         ./menu_x-ui.sh
         
 elif [ $so -eq 3 ]
