@@ -14,11 +14,8 @@ rm CD_menu.sh.10
 rm CD_menu.sh.11
 rm CD_menu.sh.12
 
-sudo apt-get update
 sudo apt-get install curl
 sudo apt-get install bash
 
 clear
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh
-chmod +x CD_menu.sh
-./CD_menu.sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh" && chmod +x CD_menu.sh && ./CD_menu.sh
