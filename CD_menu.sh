@@ -18,7 +18,7 @@ read so
 if [ $so -eq 1 ]
 then
         clear
-        bash menu_x-ui.sh
+        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh)
         ./CD_menu.sh
         
 elif [ $so -eq 2 ]
