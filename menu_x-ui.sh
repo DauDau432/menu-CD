@@ -24,11 +24,12 @@ then
         
 elif [ $so -eq 2 ]
 then
-        x-ui uninstall
-        ufw deny 54321
+        
         clear
         echo " "
         echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
+        x-ui uninstall
+        ufw deny 54321
         ./menu_x-ui.sh
         
 elif [ $so -eq 3 ]
