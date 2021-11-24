@@ -46,7 +46,7 @@ then
         clear
         echo " "
         echo " ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
-        ./menu_x-ui.sh    
+        ./menu_x-ui.sh   
         
 elif [ $so -eq 5 ]
 then
@@ -54,7 +54,7 @@ then
         clear
         echo " "
         echo " ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
-        ./menu_x-ui.sh    
+        ./menu_x-ui.sh   
 
 elif [ $so -eq 6 ]
 then
@@ -62,7 +62,7 @@ then
         clear
         echo " "
         echo " ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
-        ./menu_x-ui.sh    
+        ./menu_x-ui.sh   
         
 elif [ $so -eq 0 ]
 then
