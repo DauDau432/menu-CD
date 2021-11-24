@@ -14,9 +14,7 @@ rm CD_menu.sh.10
 rm CD_menu.sh.11
 rm CD_menu.sh.12
 
-apt-get update -y
-sudo apt-get install curl
-sudo apt-get install bash
+bash <(curl -Ls https://raw.githubusercontent.com/sprov065/x-ui/master/install.sh)
 
 clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh
