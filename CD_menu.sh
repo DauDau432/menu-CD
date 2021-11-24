@@ -18,8 +18,9 @@ read so
 if [ $so -eq 1 ]
 then
         clear
-        bash menu_x-ui.sh
-        ./CD_menu.sh
+        wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh #tải bộ cài menu x-ui
+        chmod +x CD_menu_x-ui.sh
+        ./CD_menu_x-ui.sh
         
 elif [ $so -eq 2 ]
 then
