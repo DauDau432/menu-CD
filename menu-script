@@ -1,5 +1,19 @@
 #!/usr/bin/bash
 
+rm menu.sh
+rm menu.sh.1
+rm menu.sh.2
+rm menu.sh.3
+rm menu.sh.4
+rm menu.sh.5
+rm menu.sh.6
+rm menu.sh.7
+rm menu.sh.8
+rm menu.sh.9
+rm menu.sh.10
+rm menu.sh.11
+rm menu.sh.12
+
 apt-get update -y
 sudo apt-get install curl
 sudo apt-get install bash
