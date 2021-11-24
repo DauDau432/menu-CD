@@ -28,10 +28,10 @@ clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh 
 chmod +x menu.sh
 
-clear
-#tải bộ cài menu x-ui
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh
-chmod +x CD_menu_x-ui.sh
+clear 
+#tải menu x-ui 
+bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh) 
+chmod +x menu_x-ui.sh
 
 clear
 bash menu.sh
