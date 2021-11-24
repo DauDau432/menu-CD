@@ -19,6 +19,7 @@ if [ $so -eq 1 ]
 then
         clear
         bash menu_x-ui.sh
+        ./CD_menu.sh
         
 elif [ $so -eq 2 ]
 then
