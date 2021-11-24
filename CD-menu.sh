@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-sudo su
+
 rm menu.sh.
 rm menu.sh.1
 rm menu.sh.2
