@@ -19,7 +19,7 @@ if [ $so -eq 1 ]
 then
         clear
         bash menu_x-ui.sh
-        ./menucaidat.sh
+        ./menu_x-ui.sh
         
 elif [ $so -eq 2 ]
 then
@@ -27,7 +27,7 @@ then
         echo " "
         echo " ★★★ Bấm Y Để Đồng Ý Với Giấy Phép Nếu Bạn Cài Lần Đầu ★★★ "
         bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-speedtest/main/speedtest)
-        ./menucaidat.sh
+        ./menu_x-ui.sh
         
 elif [ $so -eq 3 ]
 then
@@ -35,7 +35,7 @@ then
         echo " "
         echo " ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
         wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
-        ./menucaidat.sh
+        ./menu_x-ui.sh
         
 elif [ $so -eq 4 ]
 then
@@ -64,17 +64,8 @@ then
 elif [ $so -eq 0 ]
 then
         clear
-        echo " "
-        echo " ===== Ơ Kìa Sao Lại Đóng Menu ===== "
-        echo " "
-        echo " Nếu Muốn Gọi Menu Hãy Dùng Lại Lệnh Như Lúc Đầu "
-        echo " ------------------------------------------------------- "
-        echo " YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
-        echo " FB: https://www.facebook.com/daudau.432/ "
-        echo " Page: https://www.facebook.com/groups/vpsanhem "
-        echo " Zalo: 0983538806 "
-        echo " ------------------------------------------------------- "
-        rm menucaidat.sh
+        exit    
+        rm menu_x-ui.sh
         
         exit        
 else
@@ -83,5 +74,5 @@ else
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
         echo " ============ Chọn sai ời, chọn lại đi ============ "
-        ./menucaidat.sh
+        ./menu_x-ui.sh
 fi
