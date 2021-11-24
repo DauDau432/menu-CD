@@ -67,7 +67,7 @@ then
         echo " "
         echo " ===== Ơ Kìa Sao Lại Đóng Menu ===== "
         echo " "
-        echo " Nếu Muốn Gọi Menu Hãy Dùng Lại Lệnh Như Lúc Đầu "
+        echo " Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
         echo " ------------------------------------------------------- "
         echo " YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
         echo " FB: https://www.facebook.com/daudau.432/ "
