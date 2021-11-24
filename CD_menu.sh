@@ -19,7 +19,7 @@ if [ $so -eq 1 ]
 then
         clear
         bash menu_x-ui.sh
-        ./menu.sh
+        ./CD_menu.sh
         
 elif [ $so -eq 2 ]
 then
@@ -27,7 +27,7 @@ then
         echo " "
         echo " ★★★ Bấm Y Để Đồng Ý Với Giấy Phép Nếu Bạn Cài Lần Đầu ★★★ "
         bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-speedtest/main/speedtest)
-        ./menu.sh
+        ./CD_menu.sh
         
 elif [ $so -eq 3 ]
 then
@@ -35,7 +35,7 @@ then
         echo " "
         echo " ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
         wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
-        ./menu.sh
+        ./CD_menu.sh
         
 elif [ $so -eq 4 ]
 then
@@ -50,7 +50,7 @@ then
         echo " Bắt Đầu Nhập... "
         passwd
         echo " ------------------------------- "
-        ./menu.sh   
+        ./CD_menu.sh   
         
         elif [ $so -eq 5 ]
 then
@@ -59,7 +59,7 @@ then
         clear
         echo " "
         echo " Đã Cập Nhật VPS "
-        ./menu.sh
+        ./CD_menu.sh
         
 elif [ $so -eq 0 ]
 then
@@ -74,7 +74,7 @@ then
         echo " Page: https://www.facebook.com/groups/vpsanhem "
         echo " Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
-        rm menu.sh
+        rm CD_menu.sh
         
         exit        
 else
@@ -83,5 +83,5 @@ else
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
         echo " ============ Chọn sai ời, chọn lại đi ============ "
-        ./menu.sh
+        ./CD_menu.sh
 fi
