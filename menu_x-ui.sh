@@ -3,13 +3,14 @@
 echo " "
 echo " ============================================== "
 echo " =================== ĐẬU ĐẬU ================== "
-echo " .•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•. "
+echo " ==.•♫•♬•.•♫•♬•  MENU X_UI  •♫•♬•.•♫•♬•.== "
 echo " ============================================== "
-echo " (1). Menu X-ui "
-echo " (2). Cài đặt SpeedTest VPS "
-echo " (3). Cài đặt tăng tốc VPS "
-echo " (4). Đổi mật khẩu VPS "
-echo " (5). Cập nhật VPS "
+echo " (1). Cài đặt X-UI và mở Port cần thiết "
+echo " (2). Gỡ cài đặt X_UI "
+echo " (3). Cập nhật X_UI "
+echo " (4). Dừng bảng điều khiển "
+echo " (5). Khởi động bảng điều khiển "
+echo " (6). Khởi động lại bảng điều khiển "
 echo " (0). Đóng menu "
 echo " ============================================== "
 echo -n " Lựa chọn của bạn là:  "
@@ -18,48 +19,54 @@ read so
 if [ $so -eq 1 ]
 then
         clear
-        bash menu_x-ui.sh
+        x-ui install
+        ufw allow 54321
+        ufw allow 443
+        ufw allow 80
+        ufw allow 80/tcp
+        echo " ★★★ Đã Cài Đặt X-UI ★★★ "
         ./menu_x-ui.sh
         
 elif [ $so -eq 2 ]
 then
+        x-ui uninstall
+        ufw deny 54321
         clear
         echo " "
-        echo " ★★★ Bấm Y Để Đồng Ý Với Giấy Phép Nếu Bạn Cài Lần Đầu ★★★ "
-        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-speedtest/main/speedtest)
+        echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI ★★★ "
         ./menu_x-ui.sh
         
 elif [ $so -eq 3 ]
 then
+        x-ui update
         clear
         echo " "
-        echo " ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
-        wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+        echo " ★★★ Đã Cập Nhật X_UI ★★★ "
         ./menu_x-ui.sh
         
 elif [ $so -eq 4 ]
 then
+        x-ui stop 
         clear
         echo " "
-        echo " ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
-        echo " "
-        echo " = Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
-        echo " ------------------------------- "
-        lsb\_release -a
-        echo " ------------------------------- "
-        echo " Bắt Đầu Nhập... "
-        passwd
-        echo " ------------------------------- "
-        ./menucaidat.sh    
+        echo " ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
+        ./menu_x-ui.sh    
         
-        elif [ $so -eq 5 ]
+elif [ $so -eq 5 ]
 then
-        clear
-        apt_get update -y
+        x-ui start  
         clear
         echo " "
-        echo " Đã Cập Nhật VPS "
-        ./menucaidat.sh
+        echo " ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
+        ./menu_x-ui.sh    
+
+elif [ $so -eq 6 ]
+then
+        x-ui restart 
+        clear
+        echo " "
+        echo " ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
+        ./menu_x-ui.sh    
         
 elif [ $so -eq 0 ]
 then
