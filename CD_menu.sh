@@ -18,7 +18,7 @@ read so
 if [ $so -eq 1 ]
 then
         clear
-        ./menu_x-ui.sh
+        ./CD_menu_x-ui.sh
         
 elif [ $so -eq 2 ]
 then
