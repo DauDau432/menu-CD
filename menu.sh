@@ -6,14 +6,14 @@ menu()
 	echo " =================== ĐẬU ĐẬU ================== "
 	echo " .•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•. "
 	echo " ============================================== "
-	echo " (1). Menu X-ui "
-	echo " (2). Cài đặt SpeedTest VPS "
-	echo " (3). Cài đặt tăng tốc VPS "
-	echo " (4). Đổi mật khẩu VPS "
-	echo " (5). Cập nhật VPS "
-	echo " (0). Đóng menu "
+	echo "  (1). Menu X-ui "
+	echo "  (2). Cài đặt SpeedTest VPS "
+	echo "  (3). Cài đặt tăng tốc VPS "
+	echo "  (4). Đổi mật khẩu VPS "
+	echo "  (5). Cập nhật VPS "
+	echo "  (0). Đóng menu "
 	echo " ============================================== "
-	echo -n " Lựa chọn của bạn là:  "
+	echo -n "  Lựa chọn của bạn là:  "
 	read so
 
 	if [ $so -eq 1 ]
@@ -26,9 +26,9 @@ menu()
         curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
         sudo apt-get install speedtest
         clear
-        echo ""
-        echo " Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
-        echo ""
+        echo " ------------------------------------------------------- "
+        echo "  Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
+        echo " ------------------------------------------------------- "
         speedtest
         echo ""
         menu
@@ -48,11 +48,11 @@ menu()
         echo " "
         echo " ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
         echo " "
-        echo " = Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
+        echo " =  Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
         echo " ------------------------------- "
         lsb\_release -a
         echo " ------------------------------- "
-        echo " Bắt Đầu Nhập... "
+        echo "  Bắt Đầu Nhập... "
         passwd
         echo " ------------------------------- "
         menu
@@ -63,7 +63,7 @@ menu()
         apt-get update -y
         clear
         echo " "
-        echo " Đã Cập Nhật VPS "
+        echo " ★★★ Đã Cập Nhật VPS ★★★ "
         menu
         
 	elif [ $so -eq 0 ]
@@ -98,15 +98,15 @@ menu_x-ui()
 	echo " =================== ĐẬU ĐẬU ================== "
 	echo " ===.•♫•♬•.•♫•♬•  MENU X_UI  •♫•♬•.•♫•♬•.=== "
 	echo " ============================================== "
-	echo " (1). Cài đặt X-UI và mở Port cần thiết "
-	echo " (2). Gỡ cài đặt X_UI "
-	echo " (3). Cập nhật X_UI "
-	echo " (4). Dừng bảng điều khiển "
-	echo " (5). Khởi động bảng điều khiển "
-	echo " (6). Khởi động lại bảng điều khiển "
-	echo " (0). Quay lại "
+	echo "  (1). Cài đặt X-UI và mở Port cần thiết "
+	echo "  (2). Gỡ cài đặt X_UI "
+	echo "  (3). Cập nhật X_UI "
+	echo "  (4). Dừng bảng điều khiển "
+	echo "  (5). Khởi động bảng điều khiển "
+	echo "  (6). Khởi động lại bảng điều khiển "
+	echo "  (0). Quay lại "
 	echo " ============================================== "
-	echo -n " Lựa chọn của bạn là:  "
+	echo -n "  Lựa chọn của bạn là:  "
 	read so
 
 	if [ $so -eq 1 ]
@@ -127,7 +127,7 @@ menu_x-ui()
 	elif [ $so -eq 3 ]
 	then
 	echo " ============================================== "
-	echo "  Bấm Y để đồng ý ============================= "
+	echo "  Bấm Y để đồng ý "
 	echo " ---------------------------------------------- "
         x-ui update
         clear
