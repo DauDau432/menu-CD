@@ -1,18 +1,6 @@
 #!/usr/bin/bash
 
-rm menu.sh
-rm menu.sh.1
-rm menu.sh.2
-rm menu.sh.3
-rm menu.sh.4
-rm menu.sh.5
-rm menu.sh.6
-rm menu.sh.7
-rm menu.sh.8
-rm menu.sh.9
-rm menu.sh.10
-rm menu.sh.11
-rm menu.sh.12
+rm -rf /home/aulax432
 
 apt-get update -y
 sudo apt-get install curl
@@ -24,9 +12,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/sprov065/x-ui/master/install.s
 chmod +x install.sh
 
 clear
-#tải bộ cài menu chính
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh 
-chmod +x menu.sh
+#meu x-ui
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh 
+chmod +x menu_x-ui.sh 
 
 clear
-bash menu.sh
+#menu chinh 
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh
+chmod +x CD_menu.sh
+bash CD_menu.sh
