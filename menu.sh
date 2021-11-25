@@ -170,6 +170,5 @@ menu_x-ui(){
         echo " ============ Chọn sai ời, chọn lại đi ============ "
         menu_x-ui
 	fi
-
 }
 menu
