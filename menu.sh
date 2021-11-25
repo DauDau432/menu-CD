@@ -19,3 +19,8 @@ clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh
 chmod +x CD_menu.sh
 ./CD_menu.sh
+
+clear
+#bo tai menu x-ui
+bash <( -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh )
+chmod +x CD_menu_x-ui.sh 
