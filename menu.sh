@@ -16,11 +16,6 @@ rm CD_menu.sh.12
 
 clear
 #tải menu chính
-bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh )
+bash <( curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh )
 chmod +x CD_menu.sh
 ./CD_menu.sh
-
-clear
-#bo tai menu x-ui
-bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh )
-chmod +x CD_menu_x-ui.sh 
