@@ -1,5 +1,6 @@
 #!/usr/bin/bash
-menu(){
+menu()
+{
 	echo " "
 	echo " ============================================== "
 	echo " =================== ĐẬU ĐẬU ================== "
@@ -22,10 +23,14 @@ menu(){
         
 	elif [ $so -eq 2 ]
 	then
+        curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
+        sudo apt-get install speedtest
         clear
-        echo " "
-        echo " ★★★ Bấm Y Để Đồng Ý Với Giấy Phép Nếu Bạn Cài Lần Đầu ★★★ "
-        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-speedtest/main/speedtest)
+        echo ""
+        echo " Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
+        echo ""
+        speedtest
+        echo ""
         menu
         
 	elif [ $so -eq 3 ]
@@ -51,10 +56,10 @@ menu(){
         echo " ------------------------------- "
         menu
         
-    elif [ $so -eq 5 ]
+        elif [ $so -eq 5 ]
 	then
         clear
-        apt_get update -y
+        apt-get update -y
         clear
         echo " "
         echo " Đã Cập Nhật VPS "
@@ -84,7 +89,9 @@ menu(){
         menu
 	fi
 }
-menu_x-ui(){
+
+menu_x-ui()
+{
 	echo " "
 	echo " ============================================== "
 	echo " =================== ĐẬU ĐẬU ================== "
@@ -118,6 +125,9 @@ menu_x-ui(){
         
 	elif [ $so -eq 3 ]
 	then
+	echo " ============================================== "
+	echo "  Bấm Y để đồng ý ============================= "
+	echo " ---------------------------------------------- "
         x-ui update
         clear
         echo " "
