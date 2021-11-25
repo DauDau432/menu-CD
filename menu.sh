@@ -26,9 +26,9 @@ menu()
         curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
         sudo apt-get install speedtest
         clear
-        echo " ------------------------------------------------------- "
+        echo " ------------------------------------------------------------------- "
         echo "  Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
-        echo " ------------------------------------------------------- "
+        echo " ------------------------------------------------------------------- "
         speedtest
         echo ""
         menu
@@ -37,7 +37,7 @@ menu()
 	then
         clear
         echo " "
-        echo " ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
+        echo "  ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
         wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 	clear
         menu
@@ -46,9 +46,9 @@ menu()
 	then
         clear
         echo " "
-        echo " ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
+        echo "  ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
         echo " "
-        echo " =  Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
+        echo "  =  Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
         echo " ------------------------------- "
         lsb\_release -a
         echo " ------------------------------- "
@@ -63,7 +63,7 @@ menu()
         apt-get update -y
         clear
         echo " "
-        echo " ★★★ Đã Cập Nhật VPS ★★★ "
+        echo "  ★★★ Đã Cập Nhật VPS ★★★ "
         menu
         
 	elif [ $so -eq 0 ]
@@ -72,12 +72,12 @@ menu()
         echo " "
         echo " ======= Ơ Kìa Sao Lại Đóng Menu ======= "
         echo " "
-        echo " Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
+        echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
         echo " ------------------------------------------------------- "
-        echo " YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
-        echo " FB: https://www.facebook.com/daudau.432/ "
-        echo " Page: https://www.facebook.com/groups/vpsanhem "
-        echo " Zalo: 0983538806 "
+        echo "  YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
+        echo "  FB: https://www.facebook.com/daudau.432/ "
+        echo "  Page: https://www.facebook.com/groups/vpsanhem "
+        echo "  Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
         exit 
                
@@ -119,20 +119,20 @@ menu_x-ui()
 	then
         clear
         echo " "
-        echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
+        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
         x-ui uninstall
         ufw deny 54321
         menu_x-ui
         
 	elif [ $so -eq 3 ]
 	then
-	echo " ============================================== "
+	echo " ---------------------------------------------- "
 	echo "  Bấm Y để đồng ý "
 	echo " ---------------------------------------------- "
         x-ui update
         clear
         echo " "
-        echo " ★★★ Đã Cập Nhật X_UI ★★★ "
+        echo "  ★★★ Đã Cập Nhật X_UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
@@ -140,7 +140,7 @@ menu_x-ui()
         x-ui stop 
         clear
         echo " "
-        echo " ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
+        echo "  ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
         menu_x-ui  
         
 	elif [ $so -eq 5 ]
@@ -148,7 +148,7 @@ menu_x-ui()
         x-ui start  
         clear
         echo " "
-        echo " ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
+        echo "  ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
         menu_x-ui   
 
 	elif [ $so -eq 6 ]
@@ -156,7 +156,7 @@ menu_x-ui()
         x-ui restart 
         clear
         echo " "
-        echo " ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
+        echo "  ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
         menu_x-ui   
         
 	elif [ $so -eq 0 ]
