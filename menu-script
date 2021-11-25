@@ -10,12 +10,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/sprov065/x-ui/master/install.s
 chmod +x install.sh
 
 clear
-#meu x-ui
-bash <( -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh )
-chmod +x menu_x-ui.sh 
+#bo tai menu x-ui
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh
+chmod +x CD_menu_x-ui.sh 
 
 clear
 #menu chinh 
-bash <( curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh )
-chmod +x CD_menu.sh
-./CD_menu.sh
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
+chmod +x menu.sh
+./menu.sh
