@@ -6,4 +6,5 @@ rm menu.sh
 clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
 chmod +x menu.sh
+clear
 ./menu.sh
