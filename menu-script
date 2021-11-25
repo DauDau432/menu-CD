@@ -13,11 +13,11 @@ chmod +x install.sh
 
 clear
 #meu x-ui
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh 
+bash <( -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu_x-ui.sh )
 chmod +x menu_x-ui.sh 
 
 clear
 #menu chinh 
-wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh
+bash <( curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu.sh )
 chmod +x CD_menu.sh
 ./CD_menu.sh
