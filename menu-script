@@ -11,11 +11,11 @@ chmod +x install.sh
 
 clear
 #tai bo cai menu chinh 
-bash <( curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh )
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
 chmod +x menu.sh
 ./menu.sh
 
 clear
 #tai bo cai menu x-ui
-bash <( curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh )
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/CD_menu_x-ui.sh
 chmod +x CD_menu_x-ui.sh 
