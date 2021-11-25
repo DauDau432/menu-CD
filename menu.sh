@@ -73,8 +73,8 @@ menu(){
         echo " Page: https://www.facebook.com/groups/vpsanhem "
         echo " Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
-        
-        exit        
+        exit 
+               
 	else
         clear
         echo " "
@@ -152,8 +152,7 @@ menu_x-ui(){
 	then
         clear
         menu
-        
-        exit        
+              
 	else
         clear
         echo " "
