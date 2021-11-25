@@ -64,7 +64,7 @@ menu(){
 	then
         clear
         echo " "
-        echo " ===== Ơ Kìa Sao Lại Đóng Menu ===== "
+        echo " ======= Ơ Kìa Sao Lại Đóng Menu ======= "
         echo " "
         echo " Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
         echo " ------------------------------------------------------- "
@@ -104,19 +104,11 @@ menu_x-ui(){
 	if [ $so -eq 1 ]
 	then
         clear
-        x-ui install
-        ufw allow 54321
-        ufw allow 443
-        ufw allow 80
-        ufw allow 80/tcp
-        clear
-        echo " "
-        echo " ★★★ Đã Cài Đặt X_UI ★★★ "
+	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-x-ui/main/CD%20x-ui)
         menu_x-ui
         
 	elif [ $so -eq 2 ]
 	then
-        
         clear
         echo " "
         echo " ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
