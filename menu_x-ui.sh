@@ -75,7 +75,6 @@ elif [ $so -eq 0 ]
 then
         clear
         exit    
-        rm menu_x-ui.sh
         ./CD_menu.sh
         
         exit        
