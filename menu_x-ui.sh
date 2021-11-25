@@ -27,7 +27,7 @@ then
         clear
         echo " "
         echo " ★★★ Đã Cài Đặt X_UI ★★★ "
-        bash CD_menu_x-ui.sh
+        ./menu_x-ui.sh
         
 elif [ $so -eq 2 ]
 then
@@ -84,5 +84,5 @@ else
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
         echo " ============ Chọn sai ời, chọn lại đi ============ "
-        bash CD_menu_x-ui.sh
+        ./menu_x-ui.sh
 fi
