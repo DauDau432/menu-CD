@@ -1,8 +1,10 @@
 #!/usr/bin/bash
 
+sudo apt-get install curl
+sudo apt-get install bash
+apt-get update -y
+rm menu.sh
 clear
-#tải menu chính
-rm CD_menu.sh
-wget https://raw.githubusercontent.com/xtiepvn/menu-CD/main/CD_menu.sh 
-chmod +x CD_menu.sh
-./CD_menu.sh
+wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
+chmod +x menu.sh
+./menu.sh
