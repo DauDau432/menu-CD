@@ -30,7 +30,6 @@ menu()
         echo "  Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
         echo " ------------------------------------------------------------------- "
         speedtest
-        echo ""
         menu
         
 	elif [ $so -eq 3 ]
