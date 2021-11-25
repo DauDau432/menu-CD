@@ -39,6 +39,7 @@ menu()
         echo " "
         echo " ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
         wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+	clear
         menu
         
 	elif [ $so -eq 4 ]
