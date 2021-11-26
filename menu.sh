@@ -41,13 +41,15 @@ menu()
         echo " "
         echo "  ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
         echo " "
-        echo "  =  Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi = "
-        echo " ------------------------------- "
+        echo "     Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi  "
+        echo " --------------------------------- "
         lsb\_release -a
-        echo " ------------------------------- "
+	DATE=`date`
+	echo " ---------------------------------"
+        echo "  Date is $DATE "
+        echo " --------------------------------- "
         echo "  Bắt Đầu Nhập... "
         passwd
-        echo " ------------------------------- "
         menu
         
         elif [ $so -eq 5 ]
@@ -189,6 +191,9 @@ menu_speedtest()
 	echo " "
 	echo "  ★★★ Mạng Chậm Như Rùa Cũng Test :)) ★★★ "
 	speedtest-cli --simple --bytes
+	DATE=`date`
+	echo " ---------------------------------------------- "
+        echo "  Date is $DATE "
         menu_speedtest
         
 	elif [ $so -eq 2 ]
