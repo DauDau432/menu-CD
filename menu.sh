@@ -186,7 +186,9 @@ menu_speedtest()
         clear
 	apt install speedtest-cli
 	clear
-	speedtest-cli --bytes
+	echo " "
+	echo "  ★★★ Mạng Chậm Như Rùa Cũng Test :)) ★★★ "
+	speedtest-cli --simple --bytes
         menu_speedtest
         
 	elif [ $so -eq 2 ]
