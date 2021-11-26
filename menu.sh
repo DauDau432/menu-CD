@@ -203,7 +203,7 @@ menu_speedtest()
 	then
         clear
         echo " "
-        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt Speedtest Nếu Nó Hỏi ★★★ "
+        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt Speedtest ★★★ "
 	echo " "
         apt remove speedtest-cli
 	clear
