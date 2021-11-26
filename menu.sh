@@ -63,7 +63,7 @@ menu()
 	then
         clear
         echo " "
-        echo " ======= Ơ Kìa Sao Lại Đóng Menu ======= "
+        echo " =========== Ơ Kìa Sao Lại Đóng Menu =========== "
         echo " "
         echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
         echo " ------------------------------------------------------- "
