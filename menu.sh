@@ -7,8 +7,8 @@ menu()
 	echo " .•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•. "
 	echo " ============================================== "
 	echo "  (1). Menu X-ui "
-	echo "  (2). Cài đặt Speedtest VPS "
-	echo "  (3). Cài đặt tăng tốc VPS "
+	echo "  (2). Menu Speedtest "
+	echo "  (3). Menu tăng tốc VPS "
 	echo "  (4). Đổi mật khẩu VPS "
 	echo "  (5). Cập nhật VPS "
 	echo "  (0). Đóng menu "
@@ -114,6 +114,7 @@ menu_x-ui()
         clear
         echo " "
         echo "  ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
+	echo " "
         x-ui uninstall
         ufw deny 54321
         menu_x-ui
