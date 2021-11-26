@@ -114,7 +114,7 @@ menu_x-ui()
 	then
         clear
         echo " "
-        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt X_UI Nếu Nó Hỏi ★★★ "
+        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt X_UI ★★★ "
 	echo " "
         x-ui uninstall
         ufw deny 54321
