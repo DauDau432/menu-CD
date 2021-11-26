@@ -40,14 +40,13 @@ menu()
         clear
         echo " "
         echo "  ★ Mời Bạn Nhập Mật Khẩu Mới Và Xác Nhận Lại Mật Khẩu ★ "
-        echo " "
-        echo "     Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu, Nhập Đi  "
-        echo " --------------------------------- "
+        echo "  == Mật Khẩu Bảo Mật Nên Không Nhìn Được Đâu. Nhập Đi == "
+        echo " -------------------------------------- "
         lsb\_release -a
 	DATE=`date`
-	echo " ---------------------------------"
+	echo " -------------------------------------- "
         echo "  Date is $DATE "
-        echo " --------------------------------- "
+        echo " -------------------------------------- "
         echo "  Bắt Đầu Nhập... "
         passwd
         menu
