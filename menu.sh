@@ -190,6 +190,7 @@ menu_speedtest()
 	clear
 	echo " "
 	echo "  ★★★ Mạng Chậm Như Rùa Cũng Test :)) ★★★ "
+	echo " "
 	speedtest-cli --simple --bytes
 	DATE=`date`
 	echo " ---------------------------------------------- "
@@ -201,6 +202,7 @@ menu_speedtest()
         clear
         echo " "
         echo "  ★★★ Bấm Y Để Gỡ Cài Đặt Speedtest Nếu Nó Hỏi ★★★ "
+	echo " "
         apt remove speedtest-cli
         menu_speedtest
 	
