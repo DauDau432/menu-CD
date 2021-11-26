@@ -31,6 +31,7 @@ menu()
         clear
         echo " "
         echo "  ★★★ Triển Khai Tăng Tốc Cho Bạn ★★★ "
+	echo " "
         wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 	clear
         menu
