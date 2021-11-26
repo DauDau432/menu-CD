@@ -185,6 +185,7 @@ menu_speedtest()
 	then
         clear
 	apt install speedtest-cli
+	clear
 	speedtest-cli --bytes
         menu_speedtest
         
