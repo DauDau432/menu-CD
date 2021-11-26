@@ -7,7 +7,7 @@ menu()
 	echo " .•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•. "
 	echo " ============================================== "
 	echo "  (1). Menu X-ui "
-	echo "  (2). Cài đặt SpeedTest VPS "
+	echo "  (2). Cài đặt Speedtest VPS "
 	echo "  (3). Cài đặt tăng tốc VPS "
 	echo "  (4). Đổi mật khẩu VPS "
 	echo "  (5). Cập nhật VPS "
@@ -23,14 +23,8 @@ menu()
         
 	elif [ $so -eq 2 ]
 	then
-        curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
-        sudo apt-get install speedtest
         clear
-        echo " ------------------------------------------------------------------- "
-        echo "  Bạn bấm Y để đồng ý với giấy phép nếu là cài đặt lần đầu nó sẽ hỏi " 
-        echo " ------------------------------------------------------------------- "
-        speedtest
-        menu
+        menu_speedtest
         
 	elif [ $so -eq 3 ]
 	then
@@ -170,6 +164,50 @@ menu_x-ui()
         echo " "
         echo " ============ Chọn sai ời, chọn lại đi ============ "
         menu_x-ui
+	fi
+}
+
+menu_speedtest()
+{
+	echo " "
+	echo " ============================================== "
+	echo " =================== ĐẬU ĐẬU ================== "
+	echo "  .•♫•♬•.•♫•♬•  MENU SPEEDTEST  •♫•♬•.•♫•♬•. "
+	echo " ============================================== "
+	echo "  (1). Cài đặt Speedtest "
+	echo "  (2). Gỡ cài đặt Speedtest "
+	echo "  (0). Quay lại "
+	echo " ============================================== "
+	echo -n "  Lựa chọn của bạn là:  "
+	read so
+
+	if [ $so -eq 1 ]
+	then
+        clear
+	apt install speedtest-cli
+	speedtest-cli --bytes
+        menu_speedtest
+        
+	elif [ $so -eq 2 ]
+	then
+        clear
+        echo " "
+        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt Speedtest Nếu Nó Hỏi ★★★ "
+        apt remove speedtest-cli
+        menu_speedtest
+	
+	elif [ $so -eq 0 ]
+	then
+        clear
+        menu
+              
+	else
+        clear
+        echo " "
+        echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
+        echo " "
+        echo " ============ Chọn sai ời, chọn lại đi ============ "
+        menu_speedtest
 	fi
 }
 menu
