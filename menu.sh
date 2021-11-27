@@ -65,15 +65,7 @@ menu()
 	elif [ $so -eq 6 ]
 	then
         clear
-	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
-	DATE=`date`
-        echo "  Date is $DATE "
-        echo " ------------------------------------------------------------------------ "
-	echo "  Tất Cả tập lệnh, bảng điều khiển, web quản lý mình đều việt hóa hết rùi "
-	echo "  mà mình chưa tìm ra chỗ trỏ tập lệnh về github của mình nên nó tự update của chủ sở hữu. "
-	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
-	echo "  Xin cảm ơn! "
-        menu
+	menu_thongbao
         
 	elif [ $so -eq 0 ]
 	then
@@ -245,4 +237,24 @@ menu_speedtest()
         menu_speedtest
 	fi
 }
+
+menu_thongbao()
+{
+        if
+        clear
+        echo " "
+	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
+	DATE=`date`
+        echo "  Date is $DATE "
+        echo " ------------------------------------------------------------------------ "
+	echo "  Tất Cả tập lệnh, bảng điều khiển, web quản lý mình đều việt hóa hết rùi "
+	echo "  mà mình chưa tìm ra chỗ trỏ tập lệnh về github của mình nên nó tự update của chủ sở hữu. "
+	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
+	echo "  Xin cảm ơn! "
+        echo " ------------------------------------------------------------------------ "
+	echo "  Bấm phím bất kì để quay lại... "
+	else
+        menu
+	fi
+}	
 menu
