@@ -11,6 +11,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 -Dừng bảng điều khiển 
 -Khởi động bảng điều khiển 
 -Khởi động lại bảng điều khiển 
+`
 - menu speedtest
 -test và cài speedtest
 -gỡ cài đặt speedtest
