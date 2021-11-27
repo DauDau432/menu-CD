@@ -41,4 +41,5 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 
 - đổi mật khẩu vps
 - cập nhật vps
+- cập nhật menu
 - Thông báo
