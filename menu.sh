@@ -98,7 +98,7 @@ menu()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Chọn sai ời, chọn lại đi ============ "
+        echo " ============ Chọn sai ời. chọn lại đi ============ "
         menu
 	fi
 }
@@ -192,7 +192,7 @@ menu_x-ui()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Chọn sai ời, chọn lại đi ============ "
+        echo " ============ Chọn sai ời. chọn lại đi ============ "
         menu_x-ui
 	fi
 }
@@ -246,7 +246,7 @@ menu_speedtest()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Chọn sai ời, chọn lại đi ============ "
+        echo " ============ Chọn sai ời. chọn lại đi ============ "
         menu_speedtest
 	fi
 }
