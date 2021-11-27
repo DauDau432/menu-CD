@@ -29,7 +29,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 12. Sử dụng BBR + FQ_PIE để tăng tốc
 13. Sử dụng BBR + CAKE để tăng tốc
 14. Sử dụng BBR2 + FQ để tăng tốc 
-15. 15. Sử dụng BBR2 + FQ_PIE để tăng tốc
+15. Sử dụng BBR2 + FQ_PIE để tăng tốc
 16. Sử dụng BBR2 + CAKE để tăng tốc
 17. Bật ECN 18. Tắt ECN
 19. Sử dụng phiên bản BBRplus + FQ để tăng tốc
@@ -38,7 +38,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 22. Ứng dụng chương trình tối ưu hóa johnrosen1
 23. Tắt IPv6 24. Bật IPv6
 25. Gỡ cài đặt tất cả tăng tốc 
-99. Thoát khỏi tập lệnh
 
 - đổi mật khẩu vps
 
