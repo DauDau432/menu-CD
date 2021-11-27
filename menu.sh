@@ -251,7 +251,7 @@ menu_thongbao()
 	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
 	echo "  Xin cảm ơn! "
         echo " ------------------------------------------------------------------------ "
-	echo "  Bấm phím bất kì để quay lại... "
+	echo "  Bấm phím Enter để quay lại... "
 	read so
 	if [ $so=true ]
 	then 
