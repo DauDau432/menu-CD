@@ -11,6 +11,7 @@ menu()
 	echo "  (3). Menu tăng tốc VPS "
 	echo "  (4). Đổi mật khẩu VPS "
 	echo "  (5). Cập nhật VPS "
+	echo "  (6). Thông Báo Của Đậu "
 	echo "  (0). Đóng menu "
 	echo " ============================================== "
 	echo -n "  Lựa chọn của bạn là:  "
@@ -59,6 +60,19 @@ menu()
         clear
         echo " "
         echo "  ★★★ Đã Cập Nhật VPS ★★★ "
+        menu
+	
+	elif [ $so -eq 6 ]
+	then
+        clear
+	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
+	DATE=`date`
+        echo "  Date is $DATE "
+        echo " ------------------------------------------------------------------------ "
+	echo "  Tất Cả tập lệnh, bảng điều khiển, web quản lý mình đều việt hóa hết rùi "
+	echo "  mà mình chưa tìm ra chỗ trỏ tập lệnh về github của mình nên nó tự update của chủ sở hữu. "
+	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
+	echo "  Xin cảm ơn! "
         menu
         
 	elif [ $so -eq 0 ]
