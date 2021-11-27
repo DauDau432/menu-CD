@@ -239,8 +239,8 @@ menu_speedtest()
 }
 
 menu_thongbao()
-{
-        if
+{        
+
         clear
         echo " "
 	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
@@ -253,7 +253,8 @@ menu_thongbao()
 	echo "  Xin cảm ơn! "
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím bất kì để quay lại... "
-	else
+	if [ $so true ]
+	clear 
         menu
 	fi
 }	
