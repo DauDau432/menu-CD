@@ -40,5 +40,5 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 25. Gỡ cài đặt tất cả tăng tốc 
 
 - đổi mật khẩu vps
-
 - cập nhật vps
+- Thông báo
