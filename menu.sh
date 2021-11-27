@@ -108,12 +108,8 @@ menu_x-ui()
 	if [ $so -eq 1 ]
 	then
         clear
-	echo " "
-        echo "  ★★★ Tập Lệnh Quản Lý Bảng Điều Khiển ★★★ "
-	echo " "
 	x-ui
 	clear
-	menu_x-ui
 
 	elif [ $so -eq 2 ]
 	then
