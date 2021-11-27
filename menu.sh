@@ -244,6 +244,7 @@ menu_thongbao()
         echo " "
 	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
 	DATE=`date`
+	echo " "
         echo "  Date is $DATE "
         echo " ------------------------------------------------------------------------ "
 	echo "  Tất Cả tập lệnh, bảng điều khiển, web quản lý mình đều việt hóa hết rùi "
