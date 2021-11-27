@@ -253,7 +253,7 @@ menu_thongbao()
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím bất kì để quay lại... "
 	read so
-	if [ $so true ]
+	if [ $so=true ]
 	then 
 	clear 
         menu
