@@ -26,7 +26,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 9. Chuyển sang phiên bản hạt nhân mà không cần gỡ cài đặt
 10. Chuyển sang tập lệnh hệ thống DD bằng một cú nhấp chuột
 11. Sử dụng BBR + FQ để tăng tốc 
-12. 12. Sử dụng BBR + FQ_PIE để tăng tốc
+12. Sử dụng BBR + FQ_PIE để tăng tốc
 13. Sử dụng BBR + CAKE để tăng tốc
 14. Sử dụng BBR2 + FQ để tăng tốc 
 15. 15. Sử dụng BBR2 + FQ_PIE để tăng tốc
