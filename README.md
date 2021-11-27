@@ -35,9 +35,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 19. Sử dụng phiên bản BBRplus + FQ để tăng tốc
 20. Sử dụng Lotserver (tốc độ nhanh) để tăng tốc
 21. Tối ưu hóa cấu hình hệ thống 
-22. 22. Ứng dụng chương trình tối ưu hóa johnrosen1
+22. Ứng dụng chương trình tối ưu hóa johnrosen1
 23. Tắt IPv6 24. Bật IPv6
 25. Gỡ cài đặt tất cả tăng tốc 
-26. 99. Thoát khỏi tập lệnh
+99. Thoát khỏi tập lệnh
+
 - đổi mật khẩu vps
+
 - cập nhật vps
