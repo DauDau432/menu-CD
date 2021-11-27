@@ -256,6 +256,5 @@ menu_thongbao()
 	if [ $so true ]
 	clear 
         menu
-	fi
 }	
 menu
