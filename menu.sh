@@ -255,6 +255,6 @@ menu_thongbao()
 	if [ $so true ]
 	then 
 	clear 
-        menu
+        menu 
 }	
 menu
