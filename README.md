@@ -5,7 +5,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 ```
 # Chức năng chính
 - menu x-ui
--Cài đặt X-UI và mở Port cần thiết 
+`-Cài đặt X-UI và mở Port cần thiết 
 -Gỡ cài đặt X_UI 
 -Cập nhật X_UI 
 -Dừng bảng điều khiển 
