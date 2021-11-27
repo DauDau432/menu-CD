@@ -126,13 +126,14 @@ menu_x-ui()
         
 	elif [ $so -eq 3 ]
 	then
-        clear
-        echo " "
-        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt X_UI ★★★ "
-	echo " "
+	echo " ---------------------------------------------- "
+	echo "  Bấm Y để đồng ý "
+	echo " ---------------------------------------------- "
         x-ui uninstall
         ufw deny 54321
-	clear
+        clear
+        echo " "
+        echo "  ★★★ Đã Gỡ Cài Đặt X_UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
@@ -215,12 +216,13 @@ menu_speedtest()
         
 	elif [ $so -eq 2 ]
 	then
+	echo " ---------------------------------------------- "
+	echo "  Bấm Y để đồng ý "
+	echo " ---------------------------------------------- "
+        apt remove speedtest-cli
         clear
         echo " "
-        echo "  ★★★ Bấm Y Để Gỡ Cài Đặt Speedtest ★★★ "
-	echo " "
-        apt remove speedtest-cli
-	clear
+        echo "  ★★★ Đã Gỡ Cài Đặt Speedtest ★★★ "
         menu_speedtest
 	
 	elif [ $so -eq 0 ]
