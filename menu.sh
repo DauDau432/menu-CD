@@ -252,9 +252,11 @@ menu_thongbao()
 	echo "  Xin cảm ơn! "
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím bất kì để quay lại... "
+	read so
 	if [ $so true ]
 	then 
 	clear 
-        menu 
+        menu
+	fi 
 }	
 menu
