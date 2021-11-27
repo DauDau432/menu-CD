@@ -5,12 +5,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 ```
 # Chức năng chính
 - menu x-ui
-```-Cài đặt X-UI và mở Port cần thiết 
--Gỡ cài đặt X_UI 
--Cập nhật X_UI 
--Dừng bảng điều khiển 
--Khởi động bảng điều khiển 
--Khởi động lại bảng điều khiển 
+1. Cài đặt X-UI và mở Port cần thiết 
+2. Gỡ cài đặt X_UI 
+3. Cập nhật X_UI 
+4. Dừng bảng điều khiển 
+5. Khởi động bảng điều khiển 
+6. Khởi động lại bảng điều khiển 
 ```
 - menu speedtest
 -test và cài speedtest
