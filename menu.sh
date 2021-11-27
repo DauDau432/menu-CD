@@ -1,8 +1,9 @@
 #!/usr/bin/bash
+
 menu()
 {
-	echo " "
-	echo " ============================================== "
+	echo " "                                  HOME="v4.3.2"
+	echo " =====================================["$HOME"] "
 	echo " =================== ĐẬU ĐẬU ================== "
 	echo " .•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•. "
 	echo " ============================================== "
@@ -11,7 +12,8 @@ menu()
 	echo "  (3). Menu tăng tốc VPS "
 	echo "  (4). Đổi mật khẩu VPS "
 	echo "  (5). Cập nhật VPS "
-	echo "  (6). Thông Báo Của Đậu "
+	echo "  (6). Cập nhật Menu "
+	echo "  (7). Thông Báo mới "
 	echo "  (0). Đóng menu "
 	echo " ============================================== "
 	echo -n "  Lựa chọn của bạn là:  "
@@ -63,6 +65,15 @@ menu()
         menu
 	
 	elif [ $so -eq 6 ]
+	then
+        clear
+        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-script)
+        clear
+        echo " "
+        echo "  ★★★ Đã Cập Nhật Menu ★★★ "
+        menu
+	
+	elif [ $so -eq 7 ]
 	then
         clear
 	menu_thongbao
