@@ -110,7 +110,7 @@ menu_x-ui()
         clear
 	x-ui
 	clear
-	menu_x-ui
+	 menu_x-ui
 
 	elif [ $so -eq 2 ]
 	then
@@ -230,6 +230,5 @@ menu_speedtest()
         echo " ============ Chọn sai ời, chọn lại đi ============ "
         menu_speedtest
 	fi
-	
 }
 menu
