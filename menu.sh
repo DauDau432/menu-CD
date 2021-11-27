@@ -93,24 +93,35 @@ menu_x-ui()
 	echo " =================== ĐẬU ĐẬU ================== "
 	echo " ===.•♫•♬•.•♫•♬•  MENU X_UI  •♫•♬•.•♫•♬•.=== "
 	echo " ============================================== "
-	echo "  (1). Cài đặt X-UI và mở Port cần thiết "
-	echo "  (2). Gỡ cài đặt X_UI "
-	echo "  (3). Cập nhật X_UI "
-	echo "  (4). Dừng bảng điều khiển "
-	echo "  (5). Khởi động bảng điều khiển "
-	echo "  (6). Khởi động lại bảng điều khiển "
+	echo "  (1). Menu quản lý X-UI (nhiều chức năng hơn) "
+	echo "  (2). Cài đặt X-UI và mở Port cần thiết "
+	echo "  (3). Gỡ cài đặt X_UI "
+	echo "  (4). Cập nhật X_UI "
+	echo "  (5). Dừng bảng điều khiển "
+	echo "  (6). Khởi động bảng điều khiển "
+	echo "  (7). Khởi động lại bảng điều khiển "
 	echo "  (0). Quay lại "
 	echo " ============================================== "
 	echo -n "  Lựa chọn của bạn là:  "
 	read so
-
+	
 	if [ $so -eq 1 ]
+	then
+        clear
+	echo " "
+        echo "  ★★★ Tập Lệnh Quản Lý Bảng Điều Khiển ★★★ "
+	echo " "
+	x-ui
+	clear
+	menu_x-ui
+
+	elif [ $so -eq 2 ]
 	then
         clear
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-x-ui/main/CD%20x-ui)
         menu_x-ui
         
-	elif [ $so -eq 2 ]
+	elif [ $so -eq 3 ]
 	then
         clear
         echo " "
@@ -121,7 +132,7 @@ menu_x-ui()
 	clear
         menu_x-ui
         
-	elif [ $so -eq 3 ]
+	elif [ $so -eq 4 ]
 	then
 	echo " ---------------------------------------------- "
 	echo "  Bấm Y để đồng ý "
@@ -132,7 +143,7 @@ menu_x-ui()
         echo "  ★★★ Đã Cập Nhật X_UI ★★★ "
         menu_x-ui
         
-	elif [ $so -eq 4 ]
+	elif [ $so -eq 5 ]
 	then
         x-ui stop 
         clear
@@ -140,7 +151,7 @@ menu_x-ui()
         echo "  ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
         menu_x-ui  
         
-	elif [ $so -eq 5 ]
+	elif [ $so -eq 6 ]
 	then
         x-ui start  
         clear
@@ -148,7 +159,7 @@ menu_x-ui()
         echo "  ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
         menu_x-ui   
 
-	elif [ $so -eq 6 ]
+	elif [ $so -eq 7 ]
 	then
         x-ui restart 
         clear
