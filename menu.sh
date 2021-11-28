@@ -153,9 +153,9 @@ menu_x-ui()
 	echo " ---------------------------------------------- "
         x-ui uninstall
         ufw deny 54321
-        # clear
+        clear
         echo " "
-       # echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
+        echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
