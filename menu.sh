@@ -135,9 +135,13 @@ menu_x-ui()
 	ufw allow 54321
         ufw allow 443
         ufw allow 80
-        ufw allow 80/tcp
-	clear 
+        ufw allow 80/tcp 
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
+	clear
+	echo " "
+	echo "  x-ui v0.3.2 Quá trình cài đặt hoàn tất và bảng điều khiển đã bắt đầu，"
+        echo "  Nếu đó là cài đặt mới, cổng web mặc định là 54321，Tên người dùng và mật khẩu đều theo mặc định admin "
+        echo "  Hãy đảm bảo rằng cổng này không bị các chương trình khác chiếm giữ，Và chắc rằng 54321 Cổng đã được phát hành "
         menu_x-ui
         
 	elif [ $so -eq 3 ]
