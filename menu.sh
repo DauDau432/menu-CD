@@ -264,9 +264,6 @@ menu_thongbao()
 	echo "  mà mình chưa tìm ra chỗ trỏ tập lệnh về github của mình nên nó tự update của chủ sở hữu. "
 	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
 	echo "  Xin cảm ơn! "
-	echo " "
-	echo "  New: bản update sau sẽ thêm chức năng đặt lại tài khoản và mật khẩu về mặc định là admin "
-	echo "  "
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím Enter để quay lại... "
 	read so
