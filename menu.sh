@@ -108,12 +108,12 @@ menu_x-ui()
 	echo " "
 	echo " ============================================== "
 	echo " =================== ĐẬU ĐẬU ==========["$HOME"] "
-	echo "      .•♫•♬•.•♫•♬•  MENU X_UI  •♫•♬•.•♫•♬•. "
+	echo "      .•♫•♬•.•♫•♬•  MENU X-UI  •♫•♬•.•♫•♬•. "
 	echo " ============================================== "
 	echo "  (1). Menu quản lý X-UI (nhiều chức năng hơn) "
 	echo "  (2). Cài đặt X-UI và mở Port cần thiết "
-	echo "  (3). Gỡ cài đặt X_UI "
-	echo "  (4). Cập nhật X_UI "
+	echo "  (3). Gỡ cài đặt X-UI "
+	echo "  (4). Cập nhật X-UI "
 	echo "  (5). Dừng bảng điều khiển "
 	echo "  (6). Khởi động bảng điều khiển "
 	echo "  (7). Khởi động lại bảng điều khiển "
@@ -144,7 +144,7 @@ menu_x-ui()
         ufw deny 54321
         clear
         echo " "
-        echo "  ★★★ Đã Gỡ Cài Đặt X_UI ★★★ "
+        echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
@@ -155,7 +155,7 @@ menu_x-ui()
         x-ui update
         clear
         echo " "
-        echo "  ★★★ Đã Cập Nhật X_UI ★★★ "
+        echo "  ★★★ Đã Cập Nhật X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 5 ]
