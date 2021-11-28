@@ -271,10 +271,9 @@ menu_thongbao()
 	echo " "
         echo "  Date is $DATE "
         echo " ------------------------------------------------------------------------ "
-	echo "  Tất Cả tập lệnh, bảng điều khiển, web quản lý mình đều việt hóa hết rùi "
-	echo "  mà mình chưa tìm ra chỗ trỏ tập lệnh về github của mình nên nó tự update của chủ sở hữu. "
-	echo "  Nếu ae nào rành thì ib trực tiếp cho mình qua zalo 0983538806 để cùng hợp tác giúp ae sử dụng thuận tiện hơn nha "
-	echo "  Xin cảm ơn! "
+	echo "  Hiện tại không có thông báo nào mới "
+	echo "  nếu có góp ý nào hoặc phát hiện lỗi vui lòng liên hệ với mình để mình khắc phục sớm"
+	echo "  zalo: 0983538806"
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím Enter để quay lại... "
 	read so
@@ -285,3 +284,7 @@ menu_thongbao()
 	fi 
 }	
 menu
+
+# lệnh xóa hoàn toàn x-ui 
+# rm /usr/bin/x-ui
+
