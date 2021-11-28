@@ -132,7 +132,12 @@ menu_x-ui()
 	elif [ $so -eq 2 ]
 	then
         clear
-	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/CD-x-ui/main/CD%20x-ui)
+	ufw allow 54321
+        ufw allow 443
+        ufw allow 80
+        ufw allow 80/tcp
+	clear 
+	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
         menu_x-ui
         
 	elif [ $so -eq 3 ]
@@ -142,9 +147,9 @@ menu_x-ui()
 	echo " ---------------------------------------------- "
         x-ui uninstall
         ufw deny 54321
-        clear
+        # clear
         echo " "
-        echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
+       # echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
