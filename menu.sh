@@ -238,8 +238,6 @@ menu_speedtest()
 	echo " ---------------------------------------------- "
         apt remove speedtest-cli
         clear
-        echo " "
-        echo "  ★★★ Đã Gỡ Cài Đặt Speedtest ★★★ "
         menu_speedtest
 	
 	elif [ $so -eq 0 ]
