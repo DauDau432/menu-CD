@@ -161,7 +161,7 @@ menu_x-ui()
 	echo "  Bấm Y để đồng ý "
 	echo " ---------------------------------------------- "
         x-ui update
-        clear
+    #    clear
         menu_x-ui
         
 	elif [ $so -eq 5 ]
