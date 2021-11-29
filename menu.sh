@@ -153,8 +153,6 @@ menu_x-ui()
 	echo " ---------------------------------------------- "
         x-ui uninstall
         clear 
-        echo " "
-        echo "  ★★★ Đã Gỡ Cài Đặt X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 4 ]
@@ -164,8 +162,6 @@ menu_x-ui()
 	echo " ---------------------------------------------- "
         x-ui update
         clear
-        echo " "
-        echo "  ★★★ Đã Cập Nhật X-UI ★★★ "
         menu_x-ui
         
 	elif [ $so -eq 5 ]
