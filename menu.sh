@@ -152,7 +152,6 @@ menu_x-ui()
 	echo "  Bấm Y để đồng ý "
 	echo " ---------------------------------------------- "
         x-ui uninstall
-        clear 
         menu_x-ui
         
 	elif [ $so -eq 4 ]
@@ -161,31 +160,30 @@ menu_x-ui()
 	echo "  Bấm Y để đồng ý "
 	echo " ---------------------------------------------- "
         x-ui update
-    #    clear
         menu_x-ui
         
 	elif [ $so -eq 5 ]
 	then
         x-ui stop 
-        clear
-        echo " "
-        echo "  ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
+     #   clear
+     #   echo " "
+      #  echo "  ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
         menu_x-ui  
         
 	elif [ $so -eq 6 ]
 	then
         x-ui start  
-        clear
-        echo " "
-        echo "  ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
+  #      clear
+      #  echo " "
+     #   echo "  ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
         menu_x-ui   
 
 	elif [ $so -eq 7 ]
 	then
         x-ui restart 
-        clear
-        echo " "
-        echo "  ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
+  #      clear
+  #      echo " "
+  #      echo "  ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
         menu_x-ui   
         
 	elif [ $so -eq 0 ]
