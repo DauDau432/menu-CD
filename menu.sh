@@ -112,11 +112,12 @@ menu_x-ui()
 	echo " ============================================== "
 	echo "  (1). Menu quản lý X-UI (nhiều chức năng hơn) "
 	echo "  (2). Cài đặt X-UI và mở Port cần thiết "
-	echo "  (3). Gỡ cài đặt X-UI "
+	echo "  (3). Gỡ cài đặt bảng điều khiển "
 	echo "  (4). Cập nhật X-UI "
 	echo "  (5). Dừng bảng điều khiển "
 	echo "  (6). Khởi động bảng điều khiển "
 	echo "  (7). Khởi động lại bảng điều khiển "
+	echo "  (8). Gỡ cài đặt X-UI "
 	echo "  (0). Quay lại "
 	echo " ============================================== "
 	echo -n "  Lựa chọn của bạn là:  "
@@ -165,27 +166,23 @@ menu_x-ui()
 	elif [ $so -eq 5 ]
 	then
         x-ui stop 
-     #   clear
-     #   echo " "
-      #  echo "  ★★★ Đã Dừng Bảng Điều Khiển ★★★ "
         menu_x-ui  
         
 	elif [ $so -eq 6 ]
 	then
         x-ui start  
-  #      clear
-      #  echo " "
-     #   echo "  ★★★ Đã Khởi Động Bảng Điều Khiển ★★★ "
         menu_x-ui   
 
 	elif [ $so -eq 7 ]
 	then
         x-ui restart 
-  #      clear
-  #      echo " "
-  #      echo "  ★★★ Đã Khởi Động Lại Bảng Điều Khiển ★★★ "
         menu_x-ui   
         
+	elif [ $so -eq 8 ]
+	then
+        rm /usr/bin/x-ui
+        menu_x-ui 
+	
 	elif [ $so -eq 0 ]
 	then
         clear
@@ -275,7 +272,3 @@ menu_thongbao()
 	fi 
 }	
 menu
-
-# lệnh xóa hoàn toàn x-ui 
-# rm /usr/bin/x-ui
-
