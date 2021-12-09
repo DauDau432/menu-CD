@@ -127,6 +127,8 @@ menu_x-ui()
 	then
         clear
 	x-ui
+	clear
+	x-ui
 
 	elif [ $so -eq 2 ]
 	then
