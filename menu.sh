@@ -88,7 +88,7 @@ menu()
         echo " ------------------------------------------------------- "
         echo "  YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
         echo "  FB: https://www.facebook.com/daudau.432/ "
-        echo "  Page: https://www.facebook.com/groups/vpsanhem "
+	echo "  Github: https://github.com/DauDau432
         echo "  Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
         exit 
