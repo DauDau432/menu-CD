@@ -1,9 +1,9 @@
 # Menu script nhằm hỗ trợ sử dụng vps thuận tiện hơn
-  Sao Chép Hết Dán Vào VPS:
+## Cài đặt
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-script)
 ```
-# Chức năng chính
+## Chức năng chính
 - MENU X-UI
 1. Cài đặt X-UI và mở Port cần thiết 
 2. Gỡ cài đặt bảng điều khiển 
