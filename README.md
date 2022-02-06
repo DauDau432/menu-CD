@@ -44,3 +44,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-sc
 - cập nhật vps
 - cập nhật menu
 - Thông báo
+
+## Vdeo demo
+[Tại đây](https://youtu.be/byYpS2uVigI)
