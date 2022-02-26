@@ -16,7 +16,7 @@ menu()
 	echo " = (7). Thông Báo mới                         ="
 	echo " = (0). Đóng menu                             ="
 	echo " =============================================="
-	echo -n "  Lựa chọn của bạn là:  "
+	echo -n "  Lựa chọn của bạn là: "
 	read so
 
 	if [ $so -eq 1 ]
@@ -120,7 +120,7 @@ menu_x-ui()
 	echo " = (8). Gỡ cài đặt X-UI                        ="
 	echo " = (0). Quay lại                               ="
 	echo " ==============================================="
-	echo -n "  Lựa chọn của bạn là:  "
+	echo -n "  Lựa chọn của bạn là: "
 	read so
 	
 	if [ $so -eq 1 ]
@@ -209,7 +209,7 @@ menu_speedtest()
 	echo " = (2). Gỡ cài đặt Speedtest                  ="
 	echo " = (0). Quay lại                              ="
 	echo " =============================================="
-	echo -n "  Lựa chọn của bạn là:  "
+	echo -n "  Lựa chọn của bạn là: "
 	read so
 
 	if [ $so -eq 1 ]
