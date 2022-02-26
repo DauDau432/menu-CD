@@ -7,7 +7,7 @@ menu()
 	echo " =================== ĐẬU ĐẬU ==========["$HOME"]"
 	echo " =.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.="
 	echo " =============================================="
-	echo " = (1). Menu X-ui                             ="
+	echo " = (1). Menu X-Ui                             ="
 	echo " = (2). Menu Speedtest                        ="
 	echo " = (3). Menu tăng tốc VPS                     ="
 	echo " = (4). Đổi mật khẩu VPS                      ="
