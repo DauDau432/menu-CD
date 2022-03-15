@@ -137,6 +137,10 @@ menu_x-ui()
         ufw allow 443
         ufw allow 80
         ufw allow 80/tcp 
+	firewall-cmd --zone=public --add-port=54321/tcp --permanent
+        firewall-cmd --zone=public --add-port=80/tcp --permanent
+        firewall-cmd --zone=public --add-port=443/tcp --permanent
+        firewall-cmd --reload
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
 	clear
 	echo " "
