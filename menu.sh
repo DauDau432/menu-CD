@@ -59,7 +59,7 @@ menu()
 	then
         clear
         apt-get update -y
-	apt-get upgrade -y
+	apt upgrade -y
         clear
         echo " "
         echo "  ★★★ Đã Cập Nhật VPS ★★★ "
