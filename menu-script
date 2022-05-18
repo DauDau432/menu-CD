@@ -2,7 +2,7 @@
 sudo apt-get install bash
 sudo apt-get install curl
 apt-get update -y
-apt upgrade
+apt upgrade -y
 rm menu.sh
 clear
 wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu.sh
