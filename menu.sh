@@ -148,9 +148,11 @@ menu_x-ui()
         firewall-cmd --zone=public --add-port=443/tcp --permanent
         firewall-cmd --reload
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
+	# gọi IP server
+        intenal_ip=$(ip addr | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -E -v "^127\.|^255\.|^0\." | head -n 1)
 	clear
 	echo " "
-        echo -e "  ${green}x-ui v${last_version}${plain} Quá trình cài đặt hoàn tất và bảng điều khiển đã được bật"
+        echo -e "  ${green}x-ui v0.3.2${plain} Quá trình cài đặt hoàn tất và bảng điều khiển đã được bật"
         echo -e ""
         echo -e "  Hãy đảm bảo cổng ${green}54321${plain} không bị các chương trình khác chiếm Và Cổng ${green}54321${plain} đã được mở"
         echo -e "  Nếu bạn muốn đổi ${green}54321${plain} thành một cổng khác, hãy nhập lệnh ${green}x-ui${plain} để đổi và đảm bảo cổng đã đó cũng được mở"
