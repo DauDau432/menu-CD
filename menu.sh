@@ -8,20 +8,20 @@ menu()
 {
         HOME="v4.3.2"  #Version
 	echo " "                                  
-	echo -e" ${green}==============================================${plain}"
-	echo -e" ${green}===================${plain} ĐẬU ĐẬU ${green}==========[${plain}"$HOME"]${green}"${plain}
-	echo -e" ${green}=${plain}.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.${green}=${plain}"
-	echo -e" ${green}==============================================${plain}"
-	echo -e" ${green}=${plain} (1). Menu X-Ui                             ${green}=${plain}"
-	echo -e" ${green}=${plain} (2). Menu Speedtest                        ${green}=${plain}"
-	echo -e" ${green}=${plain} (3). Menu tăng tốc VPS                     ${green}=${plain}"
-	echo -e" ${green}=${plain} (4). Đổi mật khẩu VPS                      ${green}=${plain}"
-	echo -e" ${green}=${plain} (5). Cập nhật VPS                          ${green}=${plain}"
-	echo -e" ${green}=${plain} (6). Cập nhật Menu                         ${green}=${plain}"
-	echo -e" ${green}=${plain} (7). Thông Báo mới                         ${green}=${plain}"
-	echo -e" ${green}=${plain} (0). Đóng menu                             ${green}=${plain}"
-	echo -e" ${green}==============================================${plain}"
-	echo -n"  Lựa chọn của bạn là: "
+	echo -e " ${green}==============================================${plain}"
+	echo -e " ${green}===================${plain} ĐẬU ĐẬU ${green}==========[${plain}"$HOME"]${green}"${plain}
+	echo -e " ${green}=${plain}.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.${green}=${plain}"
+	echo -e " ${green}==============================================${plain}"
+	echo -e " ${green}=${plain} (1). Menu X-Ui                             ${green}=${plain}"
+	echo -e " ${green}=${plain} (2). Menu Speedtest                        ${green}=${plain}"
+	echo -e " ${green}=${plain} (3). Menu tăng tốc VPS                     ${green}=${plain}"
+	echo -e " ${green}=${plain} (4). Đổi mật khẩu VPS                      ${green}=${plain}"
+	echo -e " ${green}=${plain} (5). Cập nhật VPS                          ${green}=${plain}"
+	echo -e " ${green}=${plain} (6). Cập nhật Menu                         ${green}=${plain}"
+	echo -e " ${green}=${plain} (7). Thông Báo mới                         ${green}=${plain}"
+	echo -e " ${green}=${plain} (0). Đóng menu                             ${green}=${plain}"
+	echo -e " ${green}==============================================${plain}"
+	echo -n "  Lựa chọn của bạn là: "
 	read so
 
 	if [ $so -eq 1 ]
