@@ -1,22 +1,27 @@
 #!/usr/bin/bash
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+plain='\033[0m'
+
 menu()
 {
         HOME="v4.3.2"  #Version
 	echo " "                                  
-	echo " =============================================="
-	echo " =================== ĐẬU ĐẬU ==========["$HOME"]"
-	echo " =.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.="
-	echo " =============================================="
-	echo " = (1). Menu X-Ui                             ="
-	echo " = (2). Menu Speedtest                        ="
-	echo " = (3). Menu tăng tốc VPS                     ="
-	echo " = (4). Đổi mật khẩu VPS                      ="
-	echo " = (5). Cập nhật VPS                          ="
-	echo " = (6). Cập nhật Menu                         ="
-	echo " = (7). Thông Báo mới                         ="
-	echo " = (0). Đóng menu                             ="
-	echo " =============================================="
-	echo -n "  Lựa chọn của bạn là: "
+	echo -e" ${green}==============================================${plain}"
+	echo -e" ${green}===================${plain} ĐẬU ĐẬU ${green}==========[${plain}"$HOME"]${green}"${plain}
+	echo -e" ${green}=${plain}.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.${green}=${plain}"
+	echo -e" ${green}==============================================${plain}"
+	echo -e" ${green}=${plain} (1). Menu X-Ui                             ${green}=${plain}"
+	echo -e" ${green}=${plain} (2). Menu Speedtest                        ${green}=${plain}"
+	echo -e" ${green}=${plain} (3). Menu tăng tốc VPS                     ${green}=${plain}"
+	echo -e" ${green}=${plain} (4). Đổi mật khẩu VPS                      ${green}=${plain}"
+	echo -e" ${green}=${plain} (5). Cập nhật VPS                          ${green}=${plain}"
+	echo -e" ${green}=${plain} (6). Cập nhật Menu                         ${green}=${plain}"
+	echo -e" ${green}=${plain} (7). Thông Báo mới                         ${green}=${plain}"
+	echo -e" ${green}=${plain} (0). Đóng menu                             ${green}=${plain}"
+	echo -e" ${green}==============================================${plain}"
+	echo -n"  Lựa chọn của bạn là: "
 	read so
 
 	if [ $so -eq 1 ]
@@ -145,11 +150,13 @@ menu_x-ui()
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
 	clear
 	echo " "
-	echo "  x-ui v0.3.2 Quá trình cài đặt hoàn tất và bảng điều khiển đã bắt đầu "
-        echo "  Nếu đó là cài đặt mới, cổng web mặc định là 54321 "
-	echo "  Tên người dùng và mật khẩu đều theo mặc định admin "
-        echo "  Hãy đảm bảo rằng cổng này không bị các chương trình khác chiếm giữ "
-	echo "  Và chắc rằng 54321 Cổng đã được phát hành "
+        echo -e "  ${green}x-ui v${last_version}${plain} Quá trình cài đặt hoàn tất và bảng điều khiển đã được bật"
+        echo -e ""
+        echo -e "  Hãy đảm bảo cổng ${green}54321${plain} không bị các chương trình khác chiếm Và Cổng ${green}54321${plain} đã được mở"
+        echo -e "  Nếu bạn muốn đổi ${green}54321${plain} thành một cổng khác, hãy nhập lệnh ${green}x-ui${plain} để đổi và đảm bảo cổng đã đó cũng được mở"
+        echo -e ""
+        echo -e "  Vào trình duyệt truy cập  ${green}https://${intenal_ip}:54321${plain}  để vào bảng điều khiển"
+        echo -e "  Tài khoản và mật khẩu mặc định là:  ${green}admin${plain}"
         menu_x-ui
         
 	elif [ $so -eq 3 ]
