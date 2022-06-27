@@ -9,7 +9,7 @@ menu()
 {
 	echo " "                                  
 	echo -e " ${green}==============================================${plain}"
-	echo -e " ${green}===================${plain} ĐẬU ĐẬU ${green}==========[${plain}4.3.2${green}]=${plain}"
+	echo -e " ${green}===================${plain} ĐẬU ĐẬU ${green}===========[${plain}4.3.2${green}]${plain}"
 	echo -e " ${green}=${plain}.•♫•♬•.•♫•♬•  MENU CÀI ĐẶT VPS  •♫•♬•.•♫•♬•.${green}=${plain}"
 	echo -e " ${green}==============================================${plain}"
 	echo -e " ${green}=${plain} (1). Menu X-Ui                             ${green}=${plain}"
