@@ -50,7 +50,7 @@ menu()
         echo " "
         echo " =========== Muốn Đóng Menu Chứ Gì =========== "
         echo " "
-        echo "  Đíu Cho Đóng Đó Làm Gì Nhau :v "
+        echo "         Đíu Cho Đóng Đó Làm Gì Nhau :v "
 	menu
                
 	else
@@ -207,8 +207,8 @@ menu_yeu()
 menu_ktl()
 {
         echo " ---------------------------------------------------- "
-        echo "  Tại sao lại không muốn trả lời "
-        echo "  Ra ngoài trả lời lại"
+        echo "            Tại sao lại không muốn trả lời "
+        echo "                 Ra ngoài trả lời lại"
         echo " ---------------------------------------------------- "
 	echo "  Bấm phím Enter để quay lại "
 	read so
