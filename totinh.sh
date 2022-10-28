@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 # chương trình thử lòng của Đậu Đậu
+# VS 4.3.2
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
