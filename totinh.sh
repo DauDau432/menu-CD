@@ -43,7 +43,7 @@ menu()
 	elif [ $so -eq 4 ]
 	then
         clear
-	      menu_thongbao
+	menu_thongbao
         
 	elif [ $so -eq 0 ]
 	then
@@ -88,18 +88,10 @@ menu_1()
 	if [ $so -eq 1 ]
 	then
         clear
-        echo ""
-	echo " ------------------------------ "
-        echo "  Đưa tay đây nào"
-        echo "  💝 💝 💝 💝 💝 💝 💝"
-        echo "  Mãi bên nhau bạn nhớ"
-	echo " ------------------------------ "
-	echo "  Bấm phím Enter để quay lại    "
-	read so
-	if [ $so=true ]
-	then 
-	clear 
-        menu
+	echo ""
+	echo "  Hỏi CC biết rồi còn hỏi nữa"
+	echo "  Chọn Câu hỏi nào khó hơn đi"
+	menu_1
 
 	elif [ $so -eq 2 ]
 	then
@@ -108,21 +100,14 @@ menu_1()
         echo "  Câu trả lời này không tồn tại trong từ điển của Duy "
         echo "  Xin bạn hãy trả lời lại :)))"
         echo " ---------------------------------------------------- "
-	
-        menu
+        menu_1
         
 	elif [ $so -eq 3 ]
 	then 
-        echo " ---------------------------------------------- "
-        echo "  Tại sao lại không muốn trả lời ;o "
-        echo "  Ra ngoài trả lời lại"
-        echo " ---------------------------------------------- "	
-	echo "  Bấm phím Enter để quay lại "
-	read so
-	if [ $so=true ]
-	then 
-	clear 
-        menu
+	clear
+	echo ""
+	echo "  Đã không muón trả lời r còn bấm vào làm gì"
+	menu_1
 	
 	elif [ $so -eq 0 ]
 	then
@@ -135,46 +120,42 @@ menu_1()
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
         echo " ============ Ối dồi ôi. chọn lại đi ============ "
-        menu
+        menu_1
 	fi
 }
 
 menu_2()
 {
 	echo " "
-	echo " =============================================="
-	echo " =================== ĐẬU ĐẬU ==========[4.3.2]"
-	echo " = .•♫•♬•.•♫•♬•  MENU SPEEDTEST  •♫•♬•.•♫•♬•. ="
-	echo " =============================================="
-	echo " = (1). Cài đặt Speedtest                     ="
-	echo " = (2). Gỡ cài đặt Speedtest                  ="
-	echo " = (0). Quay lại                              ="
-	echo " =============================================="
+	echo " ==============================================="
+	echo " =================== ĐẬU ĐẬU ===========[4.3.2]"
+	echo " =.•♫•♬•.•♫•♬•Thảo có 💝 Duy không•♫•♬•.•♫•♬•.="
+	echo " ==============================================="
+	echo " = (1). Iu chớt đi được                        ="
+	echo " = (2). Đéo                                    ="
+	echo " = (3). Không muốn trả lời                     ="
+	echo " = (0). Quay lại                               ="
+	echo " ==============================================="
 	echo -n "  Lựa chọn của bạn là: "
 	read so
-
+	
 	if [ $so -eq 1 ]
 	then
         clear
-	apt install speedtest-cli
-	clear
-	echo " "
-	echo "  ★★★ Mạng Chậm Như Rùa Cũng Test :)) ★★★ "
-	echo " "
-	speedtest-cli --simple --bytes
-	DATE=`date`
-	echo " ---------------------------------------------- "
-        echo "  Date is $DATE "
-        menu_speedtest
-        
+	menu_yeu
+
 	elif [ $so -eq 2 ]
 	then
-	echo " ---------------------------------------------- "
-	echo "  Bấm Y để đồng ý "
-	echo " ---------------------------------------------- "
-        apt remove speedtest-cli
         clear
-        menu_speedtest
+        echo " ---------------------------------------------------- "
+        echo "  Chọn sai rồi trả lời lại đi :)))"
+        echo " ---------------------------------------------------- "
+        menu_2
+        
+	elif [ $so -eq 3 ]
+	then 
+	clear
+	menu_ktl
 	
 	elif [ $so -eq 0 ]
 	then
@@ -186,8 +167,8 @@ menu_2()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Chọn sai ời. chọn lại đi ============ "
-        menu_speedtest
+        echo " ============ Ối dồi ôi. chọn lại đi ============ "
+        menu_2
 	fi
 }
 
@@ -195,14 +176,9 @@ menu_thongbao()
 {        
         clear
         echo " "
-	echo "  ★★★★★★★★★★★★ Thông Báo ★★★★★★★★★★★★ "
-	DATE=`date`
-	echo " "
-        echo "  Date is $DATE "
+	echo "         ★★★★★★★★★★★★ I LOVE YOU ★★★★★★★★★★★★ "
         echo " ------------------------------------------------------------------------ "
-	echo "  Hiện tại không có thông báo nào mới "
-	echo "  nếu có góp ý nào hoặc phát hiện lỗi vui lòng liên hệ với mình để mình khắc phục sớm"
-	echo "  zalo: 0983538806"
+	echo "  Đậu chức 2 bạn trăm năm hạnh phúc 💖 ❤ 🧡 🤍 💔 💛 💝 💚 💓 💜 🤎 "
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím Enter để quay lại... "
 	read so
@@ -211,5 +187,36 @@ menu_thongbao()
 	clear 
         menu
 	fi 
-}	
+}
+
+menu_yeu()
+{
+        clear
+        echo ""
+	echo " ------------------------------ "
+        echo "  Đưa tay đây nào"
+        echo "  💝 💝 💝 💝 💝 💝 💝"
+        echo "  Mãi bên nhau bạn nhớ"
+	echo " ------------------------------ "
+	echo "  Bấm phím Enter để quay lại    "
+	read so
+	if [ $so=true ]
+	then 
+	clear
+	menu_2
+}
+
+menu_ktl()
+{
+        echo " ---------------------------------------------- "
+        echo "  Tại sao lại không muốn trả lời ;o "
+        echo "  Ra ngoài trả lời lại"
+        echo " ---------------------------------------------- "	
+	echo "  Bấm phím Enter để quay lại "
+	read so
+	if [ $so=true ]
+	then 
+	menu_2
+}
+
 menu
