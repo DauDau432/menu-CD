@@ -184,9 +184,9 @@ menu_thongbao()
 	read so
 	if [ $so=true ]
 	then 
-	fi
 	clear 
         menu
+	fi
 }
 
 menu_yeu()
@@ -202,9 +202,9 @@ menu_yeu()
 	read so
 	if [ $so=true ]
 	then 
-	fi
 	clear
 	menu_2
+	fi
 }
 
 menu_ktl()
@@ -217,9 +217,9 @@ menu_ktl()
 	read so
 	if [ $so=true ]
 	then 
-	fi
 	clear
 	menu_2
+	fi
 }
 
 menu
