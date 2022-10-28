@@ -51,11 +51,11 @@ menu()
         echo " "
         echo " =========== Ơ Kìa Sao Lại Đóng Menu =========== "
         echo " "
-        echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
+        echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash totinh.sh  "
         echo " ------------------------------------------------------- "
         echo "  YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
         echo "  FB: https://www.facebook.com/daudau.432/ "
-	      echo "  Github: https://github.com/DauDau432 "
+	echo "  Github: https://github.com/DauDau432 "
         echo "  Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
         exit 
@@ -184,9 +184,9 @@ menu_thongbao()
 	read so
 	if [ $so=true ]
 	then 
+	fi
 	clear 
         menu
-	fi 
 }
 
 menu_yeu()
@@ -202,6 +202,7 @@ menu_yeu()
 	read so
 	if [ $so=true ]
 	then 
+	fi
 	clear
 	menu_2
 }
@@ -216,6 +217,8 @@ menu_ktl()
 	read so
 	if [ $so=true ]
 	then 
+	fi
+	clear
 	menu_2
 }
 
