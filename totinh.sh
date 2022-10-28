@@ -89,17 +89,26 @@ menu_1()
 	then
         clear
         echo ""
+	echo " ------------------------------ "
         echo "  Đưa tay đây nào"
-        echo "  💝💝💝💝💝💝💝"
+        echo "  💝 💝 💝 💝 💝 💝 💝"
         echo "  Mãi bên nhau bạn nhớ"
+	echo " ------------------------------ "
+	echo "  Bấm phím Enter để quay lại    "
+	read so
+	if [ $so=true ]
+	then 
+	clear 
         menu
 
 	elif [ $so -eq 2 ]
 	then
         clear
-        echo ""
-        echo "  Câu trả lời này không tồn tại trong từ điển của Duy"
+        echo " ---------------------------------------------------- "
+        echo "  Câu trả lời này không tồn tại trong từ điển của Duy "
         echo "  Xin bạn hãy trả lời lại :)))"
+        echo " ---------------------------------------------------- "
+	
         menu
         
 	elif [ $so -eq 3 ]
@@ -107,7 +116,12 @@ menu_1()
         echo " ---------------------------------------------- "
         echo "  Tại sao lại không muốn trả lời ;o "
         echo "  Ra ngoài trả lời lại"
-        echo " ---------------------------------------------- "
+        echo " ---------------------------------------------- "	
+	echo "  Bấm phím Enter để quay lại "
+	read so
+	if [ $so=true ]
+	then 
+	clear 
         menu
 	
 	elif [ $so -eq 0 ]
