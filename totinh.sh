@@ -11,7 +11,7 @@ menu()
 	echo " "                                  
 	echo -e " ${green}==============================================${plain}"
 	echo -e " ${green}===================${plain} ĐẬU ĐẬU ${green}===========[${plain}4.3.2${green}]${plain}"
-	echo -e " ${green}=${plain} .•♫•♬•.•♫•♬•     Thử Lòng      •♫•♬•.•♫•♬•.${green}=${plain}"
+	echo -e " ${green}=${plain} .•♫•♬•.•♫•♬•     Thử Lòng     •♫•♬•.•♫•♬•. ${green}=${plain}"
 	echo -e " ${green}==============================================${plain}"                 
 	echo -e " ${green}=${plain} (1). Kiểm tra Duy yêu Thảo không           ${green}=${plain}"
 	echo -e " ${green}=${plain} (2). Kiểm tra Thảo yêu Duy không           ${green}=${plain}"
