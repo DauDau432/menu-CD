@@ -10,8 +10,8 @@ menu()
 	echo " "                                  
 	echo -e " ${green}==============================================${plain}"
 	echo -e " ${green}===================${plain} ĐẬU ĐẬU ${green}===========[${plain}4.3.2${green}]${plain}"
-	echo -e " ${green}=${plain}.•♫•♬•.•♫•♬• kiểm tra tình yêu •♫•♬•.•♫•♬•.${green}=${plain}"
-	echo -e " ${green}========================================a======${plain}"
+	echo -e " ${green}=${plain} .•♫•♬•.•♫•♬• kiểm tra tình yêu •♫•♬•.•♫•♬•.${green}=${plain}"
+	echo -e " ${green}==============================================${plain}"
 	echo -e " ${green}=${plain} (1). Kiểm tra Duy yêu Thảo không           ${green}=${plain}"
 	echo -e " ${green}=${plain} (2). Kiểm tra Thảo yêu Duy không           ${green}=${plain}"
 	echo -e " ${green}=${plain} (3). Cập nhật Menu                         ${green}=${plain}"
@@ -34,11 +34,12 @@ menu()
 	elif [ $so -eq 3 ]
 	then
         clear
-        bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/menu-CD/main/menu-script)
-        clear
+	rm -rf totinh.sh
+        wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/totinh.sh
+	clear
+        bash totinh.sh
         echo " "
         echo "  ★★★ Đã Cập Nhật Menu ★★★ "
-        menu
 	
 	elif [ $so -eq 4 ]
 	then
@@ -65,7 +66,7 @@ menu()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Ối dồi ôi. chọn lại đi ============ "
+        echo " ============= Ối dồi ôi. chọn lại đi ============= "
         menu
 	fi
 }
@@ -74,8 +75,8 @@ menu_1()
 {
 	echo " "
 	echo " ==============================================="
-	echo " =================== ĐẬU ĐẬU ===========[4.3.2]"
-	echo " =.•♫•♬•.•♫•♬•Duy có 💝 Thảo không•♫•♬•.•♫•♬•.="
+	echo " =================== ĐẬU ĐẬU ============[4.3.2]"
+	echo " =.•♫•♬•.•♫•♬• Duy có 💝 Thảo không •♫•♬•.•♫•♬•.="
 	echo " ==============================================="
 	echo " = (1). Iu chớt đi được                        ="
 	echo " = (2). Đéo                                    ="
@@ -89,24 +90,28 @@ menu_1()
 	then
         clear
 	echo ""
+        echo " ---------------------------------------------------- "
 	echo "  Hỏi CC biết rồi còn hỏi nữa"
 	echo "  Chọn Câu hỏi nào khó hơn đi"
+        echo " ---------------------------------------------------- "
 	menu_1
 
 	elif [ $so -eq 2 ]
 	then
         clear
-        echo " ---------------------------------------------------- "
+        echo " ----------------------------------------------------- "
         echo "  Câu trả lời này không tồn tại trong từ điển của Duy "
         echo "  Xin bạn hãy trả lời lại :)))"
-        echo " ---------------------------------------------------- "
+        echo " ----------------------------------------------------- "
         menu_1
         
 	elif [ $so -eq 3 ]
 	then 
 	clear
 	echo ""
+        echo " ---------------------------------------------------- "	
 	echo "  Đã không muón trả lời r còn bấm vào làm gì"
+        echo " ---------------------------------------------------- "
 	menu_1
 	
 	elif [ $so -eq 0 ]
@@ -119,7 +124,7 @@ menu_1()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Ối dồi ôi. chọn lại đi ============ "
+        echo " ============= Ối dồi ôi. chọn lại đi ============= "
         menu_1
 	fi
 }
@@ -167,7 +172,7 @@ menu_2()
         echo " "
         echo " === Số Bạn Chọn Không Có Trong Bảng Điều Khiển === "
         echo " "
-        echo " ============ Ối dồi ôi. chọn lại đi ============ "
+        echo " ============= Ối dồi ôi. chọn lại đi ============= "
         menu_2
 	fi
 }
@@ -193,11 +198,11 @@ menu_yeu()
 {
         clear
         echo ""
-	echo " ------------------------------ "
+        echo " ---------------------------------------------------- "
         echo "  Đưa tay đây nào"
         echo "  💝 💝 💝 💝 💝 💝 💝"
         echo "  Mãi bên nhau bạn nhớ"
-	echo " ------------------------------ "
+        echo " ---------------------------------------------------- "
 	echo "  Bấm phím Enter để quay lại    "
 	read so
 	if [ $so=true ]
@@ -209,10 +214,10 @@ menu_yeu()
 
 menu_ktl()
 {
-        echo " ---------------------------------------------- "
+        echo " ---------------------------------------------------- "
         echo "  Tại sao lại không muốn trả lời ;o "
         echo "  Ra ngoài trả lời lại"
-        echo " ---------------------------------------------- "	
+        echo " ---------------------------------------------------- "
 	echo "  Bấm phím Enter để quay lại "
 	read so
 	if [ $so=true ]
