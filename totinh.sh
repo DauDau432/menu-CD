@@ -38,8 +38,6 @@ menu()
         wget https://raw.githubusercontent.com/DauDau432/menu-CD/main/totinh.sh
 	clear
         bash totinh.sh
-        echo " "
-        echo "  ★★★ Đã Cập Nhật Menu ★★★ "
 	
 	elif [ $so -eq 4 ]
 	then
@@ -50,16 +48,10 @@ menu()
 	then
         clear
         echo " "
-        echo " =========== Ơ Kìa Sao Lại Đóng Menu =========== "
+        echo " =========== Muốn Đóng Menu Chứ Gì =========== "
         echo " "
-        echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash totinh.sh  "
-        echo " ------------------------------------------------------- "
-        echo "  YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
-        echo "  FB: https://www.facebook.com/daudau.432/ "
-	echo "  Github: https://github.com/DauDau432 "
-        echo "  Zalo: 0983538806 "
-        echo " ------------------------------------------------------- "
-        exit 
+        echo "  Đíu Cho Đóng Đó Làm Gì Nhau :v "
+	menu
                
 	else
         clear
@@ -215,7 +207,7 @@ menu_yeu()
 menu_ktl()
 {
         echo " ---------------------------------------------------- "
-        echo "  Tại sao lại không muốn trả lời ;o "
+        echo "  Tại sao lại không muốn trả lời "
         echo "  Ra ngoài trả lời lại"
         echo " ---------------------------------------------------- "
 	echo "  Bấm phím Enter để quay lại "
