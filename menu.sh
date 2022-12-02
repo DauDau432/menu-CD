@@ -149,7 +149,7 @@ menu_x-ui()
         firewall-cmd --reload
 	bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/VH_x-ui/main/install.sh)
 	# gọi IP server
-        intenal_ip=$(ip addr | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -E -v "^127\.|^255\.|^0\." | head -n 1)
+        intenal_ip=$(ip addr | grep -E -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -E -v "^127\.|^255\.|^0\." | head -n 1)#copyright by daudau
 	clear
 	echo " "
         echo -e "  ${green}x-ui v0.3.2${plain} Quá trình cài đặt hoàn tất và bảng điều khiển đã được bật"
