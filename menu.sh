@@ -92,10 +92,9 @@ menu()
         echo " "
         echo "  Nếu Muốn Gọi Menu Hãy Nhập Lệnh:  bash menu.sh  "
         echo " ------------------------------------------------------- "
-        echo "  YTB: https://www.youtube.com/channel/UCly-jPYF0jWZS12IdyVZqsg/featured "
+        echo "  YTB: https://www.youtube.com/@daudau5.0/ "
         echo "  FB: https://www.facebook.com/daudau.432/ "
 	echo "  Github: https://github.com/DauDau432 "
-        echo "  Zalo: 0983538806 "
         echo " ------------------------------------------------------- "
         exit 
                
@@ -275,7 +274,9 @@ menu_thongbao()
         echo " ------------------------------------------------------------------------ "
 	echo "  Hiện tại không có thông báo nào mới "
 	echo "  nếu có góp ý nào hoặc phát hiện lỗi vui lòng liên hệ với mình để mình khắc phục sớm"
-	echo "  zalo: 0983538806"
+        echo "  YTB: https://www.youtube.com/@daudau5.0/ "
+        echo "  FB: https://www.facebook.com/daudau.432/ "
+	echo "  Github: https://github.com/DauDau432 "
         echo " ------------------------------------------------------------------------ "
 	echo "  Bấm phím Enter để quay lại... "
 	read so
